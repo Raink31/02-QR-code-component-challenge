@@ -26,7 +26,7 @@ body{
 
 #qr_code img{
     width: 315px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-top: 5%;
 }
 
