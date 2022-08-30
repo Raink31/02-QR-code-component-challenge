@@ -1,54 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+/* RESETS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+
+/* CSS */
 
 body{
-    font-family: "Outfit", sans-serif;
-    font-weight: 400;
-    background-color: hsl(212, 45%, 89%);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    width: 100vw;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    background-color: hsl(212, 45%, 89%);
 }
 
-#main{
+.container{
+    max-width: 375px;
+}
+
+.wrapper{
+    background-color: white;
+    margin: 1rem;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.205);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-color: white;
-    border-radius: 20px;
-    width: 345px;
-    text-align: center;
-    box-shadow: 0 10px 15px hsla(219, 15%, 55%, 0.274);
 }
 
-#qr_code img{
-    width: 315px;
+.img-box{
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+
+.img-box img{
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
-    margin-top: 5%;
 }
 
-#text h1{
+.text-box{
+    padding: 1.6rem 2rem 2rem 2rem;
+}
+
+.title h1{
     font-size: 1.5em;
-    color: hsl(218, 44%, 22%)
+    color: hsl(218, 44%, 22%);
+    margin-bottom: 1.2rem;
 }
 
-#text p{
-    font-size: 1.05em;
-    font-weight: 400;
+.subtitle p{
     color: hsl(220, 15%, 55%);
+    font-size: 1.08em;
+    margin-bottom: 1rem;
 }
 
-#text{
-    margin-top: 2%;
-    margin-bottom: 8%;
-}
-
-.attribution{
-    width: 345px;
+footer{
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.80);
+    letter-spacing: 1px;
     font-size: 0.8em;
-    text-align: center;
-    margin-top: 1%;
+}
+
+footer a{
+    color: #2c7dfa;
 }
